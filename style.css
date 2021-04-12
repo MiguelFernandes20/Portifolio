@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+
 
 *{
     margin: 0%;
@@ -19,6 +22,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 .hamburguer{
    /* background-color: red;*/
     width: 2rem;
@@ -36,7 +40,7 @@ html{
 
 .show-menu .hamburguer{
     right: 16rem;
-    z-index: 160;
+    z-index: 100;
     
 }
  
@@ -184,7 +188,7 @@ animation: moveBanner 1s 0.9s forwards;
    top: 0;
    right: -20rem;
    transition: all 1s;
-   z-index: 150;
+   z-index: 99;
 }
 
 .show-menu .sidebar  {
@@ -612,6 +616,165 @@ align-items: center;
        color: #fff;
        border-radius: .3rem;
        box-shadow: 0 0.1rem 0.6rem #000006;
-       z-index: 170;
+       z-index: 100;
 
 }
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #272727;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    flex-direction: row;
+}
+footer .container .sec{
+margin-right: 30px;
+}
+
+footer .container .sec.aboutus{
+width: 40%;
+}
+
+footer .container  h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+ }
+
+ footer .container  h2:before{
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width:50px ;
+     height: 2px;
+     background:#f99c23 ;
+ }
+
+ footer  p{
+     color: #999;
+ }
+
+ .sci{
+     margin-top:20px ;
+     display: flex;
+ }
+
+ .sci li{
+     list-style: none;
+
+ }
+
+ .sci li a{
+     display: inline-block;
+     width: 40px;
+     height: 40px;
+     background: #222;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 10px;
+     text-decoration: none;
+     border-radius: 4px;
+ }
+
+ .sci li a:hover{
+     background: #f99c23;
+ }
+
+ .sci li a .fa{
+     color: #fff;
+     font-size: 20px;
+ }
+
+ .quicklinks{
+position: relative;
+width: 25%;
+ }
+
+ .quicklinks ul li{
+list-style: none;
+ }
+
+ .quicklinks ul li a{
+color: #999;
+text-decoration: none;
+margin-bottom: 10px;
+display: inline-block;
+ }
+
+ .quicklinks ul li a:hover{
+     color:#fff;
+ }
+
+ .contact{
+     width: calc(35% - 60px);
+     margin: 0  !important;
+ }
+
+ .contact .info{
+     position: relative;   
+ }
+
+ .contact .info li{
+     display: flex;
+     margin-bottom: 16px;
+ }
+
+ .contact .info li span:nth-child(1){
+color: #fff;
+font-size: 20px;
+margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li  a{
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color:#fff;
+}
+
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color:#999
+}
+
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+      margin-right: 0;  
+      margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus, .quicklinks, .container, .contact{
+width: 100%;
+    }
+    .copyrightText{
+        padding: 8px 40px;
+    }
+
+} 
